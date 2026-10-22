@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#100d10" />
+  <meta name="description" content="VELOURA — expressive beauty, elevated." />
+  <title>VELOURA — Beauty, Unfiltered</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <div class="announcement">A LITTLE EXTRA GLOW — COMPLIMENTARY SHIPPING OVER ₹999 <span>✦</span></div>
+  <header class="site-header">
+    <a class="wordmark" href="#" aria-label="Veloura home"><span class="brand-symbol">V</span> VELOURA<span class="wordmark-dot">.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#shop">Shop</a><a href="#bestsellers">Bestsellers</a><a href="#world">Our world</a><a href="#story">Our story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Search" id="searchBtn"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button class="icon-btn" aria-label="Account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c.6-4.3 3.3-6.5 8-6.5s7.4 2.2 8 6.5"/></svg></button>
+      <button class="icon-btn bag-btn" aria-label="Shopping bag" id="bagBtn"><svg viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span id="bagCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> BEAUTY WITHOUT APOLOGY</p>
+        <h1>Own your<br>kind of <em>glow.</em></h1>
+        <p class="hero-description">Colour that makes a statement.<br>Care that feels like a ritual.</p>
+        <div class="hero-buttons"><a class="button button-pink" href="#bestsellers">SHOP THE EDIT <span>↗</span></a><a class="text-link" href="#world">Discover our world <span>↓</span></a></div>
+        <div class="hero-note"><span class="note-star">✳</span><span>Made for every mood.<br><b>Always unapologetically you.</b></span></div>
+      </div>
+      <div class="hero-art" aria-label="3D lipstick product display">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-image-wrap"><img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=1100&q=90" alt="Luxury lipstick in a rich rose shade"></div>
+        <div class="hero-floating floating-one">YOUR<br>RULES <span>✳</span></div>
+        <div class="hero-floating floating-two">THE<br>GLOW CLUB</div>
+        <div class="hero-caption"><span>01 / THE SIGNATURE LIP</span><span>VELVET. VIVID. YOU.</span></div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><div class="scroll-line"></div><span>01 — 04</span></div>
+    </section>
+
+    <section class="marquee" aria-label="Brand values"><div class="marquee-track"><span>COLOUR YOUR WAY</span><b>✳</b><span>CARE IN EVERY COAT</span><b>✳</b><span>BE YOUR OWN MUSE</span><b>✳</b><span>COLOUR YOUR WAY</span><b>✳</b><span>CARE IN EVERY COAT</span><b>✳</b><span>BE YOUR OWN MUSE</span><b>✳</b></div></section>
+
+    <section class="section categories" id="shop">
+      <div class="section-heading"><div><p class="eyebrow dark-eyebrow">FIND YOUR FEELING</p><h2>A mood for <em>every you.</em></h2></div><a class="text-link dark-link" href="#bestsellers">Explore all categories ↗</a></div>
+      <div class="category-grid">
+        <a class="category-card cat-lips" href="#bestsellers"><div class="category-photo"><img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=600&q=85" alt="Lip colour collection"><span class="round-arrow">↗</span></div><div class="category-meta"><span>01 / LIPS</span><span>Find your signature</span></div><h3>Lip colour</h3></a>
+        <a class="category-card cat-face" href="#bestsellers"><div class="category-photo"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=85" alt="Beauty and face makeup"><span class="round-arrow">↗</span></div><div class="category-meta"><span>02 / FACE</span><span>Your canvas</span></div><h3>Face essentials</h3></a>
+        <a class="category-card cat-eyes" href="#bestsellers"><div class="category-photo"><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=600&q=85" alt="Eye makeup essentials"><span class="round-arrow">↗</span></div><div class="category-meta"><span>03 / EYES</span><span>Make them look</span></div><h3>Eye play</h3></a>
+        <a class="category-card cat-care" href="#bestsellers"><div class="category-photo"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=85" alt="Skincare products"><span class="round-arrow">↗</span></div><div class="category-meta"><span>04 / CARE</span><span>Glow from within</span></div><h3>Skin rituals</h3></a>
+      </div>
+    </section>
+
+    <section class="section bestsellers" id="bestsellers">
+      <div class="section-heading"><div><p class="eyebrow">THE CULT FAVOURITES</p><h2>Love at first <em>swipe.</em></h2><p class="section-subtitle">The pieces your beauty bag has been waiting for.</p></div><div class="product-controls"><button class="circle-control" id="prevProducts" aria-label="Previous products">←</button><button class="circle-control" id="nextProducts" aria-label="Next products">→</button></div></div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-name="Velvet Muse Lipstick" data-price="799"><div class="product-visual visual-rose"><span class="product-tag">BESTSELLER</span><button class="heart" aria-label="Add to wishlist">♡</button><img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=650&q=85" alt="Velvet Muse lipstick"><button class="quick-add">QUICK ADD <span>+</span></button></div><div class="product-info"><div><h3>Velvet Muse Lipstick</h3><p>01 — Rose Riot</p></div><strong>₹799</strong></div><div class="swatches"><i style="--swatch:#a83d50"></i><i style="--swatch:#bd796e"></i><i style="--swatch:#6c2836"></i><i style="--swatch:#d39a8d"></i><span>+4</span></div></article>
+        <article class="product-card" data-name="Cloud Nine Blush" data-price="649"><div class="product-visual visual-peach"><span class="product-tag">NEW IN</span><button class="heart" aria-label="Add to wishlist">♡</button><img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=650&q=85" alt="Cloud Nine blush"><button class="quick-add">QUICK ADD <span>+</span></button></div><div class="product-info"><div><h3>Cloud Nine Blush</h3><p>02 — Peach Please</p></div><strong>₹649</strong></div><div class="swatches"><i style="--swatch:#e5a08c"></i><i style="--swatch:#bd6e81"></i><i style="--swatch:#b75b4d"></i></div></article>
+        <article class="product-card" data-name="After Hours Liner" data-price="499"><div class="product-visual visual-lilac"><button class="heart" aria-label="Add to wishlist">♡</button><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=650&q=85" alt="After Hours eye makeup"><button class="quick-add">QUICK ADD <span>+</span></button></div><div class="product-info"><div><h3>After Hours Liner</h3><p>01 — Inky Black</p></div><strong>₹499</strong></div><div class="swatches"><i style="--swatch:#171419"></i><i style="--swatch:#4b342b"></i><i style="--swatch:#56475e"></i></div></article>
+        <article class="product-card" data-name="Dew Theory Serum" data-price="999"><div class="product-visual visual-green"><span class="product-tag">SKIN FIRST</span><button class="heart" aria-label="Add to wishlist">♡</button><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=650&q=85" alt="Dew Theory skincare serum"><button class="quick-add">QUICK ADD <span>+</span></button></div><div class="product-info"><div><h3>Dew Theory Serum</h3><p>30 ml — Daily glow</p></div><strong>₹999</strong></div><div class="swatches"><i style="--swatch:#d9c8a9"></i><i style="--swatch:#e6dcd0"></i></div></article>
+      </div>
+    </section>
+
+    <section class="campaign">
+      <div class="campaign-copy"><p class="eyebrow dark-eyebrow">THE BEAUTY EDIT / 2026</p><h2>Good things<br>come in <em>bold.</em></h2><p>Meet the colour story made for your next main-character moment.</p><a href="#bestsellers" class="button button-dark">SHOP THE EDIT <span>↗</span></a><div class="campaign-stamp">LIMITED<br>MOOD<br><span>✳</span></div></div>
+      <div class="campaign-image"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1000&q=90" alt="A curated collection of beauty products"></div>
+    </section>
+
+    <section class="world" id="world">
+      <div class="world-copy"><p class="eyebrow">A LITTLE MAGIC, IN 3D</p><h2>Beauty from<br>every <em>angle.</em></h2><p>Meet your new favourite in an interactive little universe. Drag to explore the details, the shine, the attitude.</p><div class="world-actions"><span class="live-dot"></span> INTERACTIVE PRODUCT STUDIO <span class="world-index">01 / 03</span></div><div class="world-product"><span>01</span><div><b>The Velvet Muse</b><small>Rose Riot · Satin finish</small></div><strong>₹799</strong></div></div>
+      <div class="three-wrap"><div class="three-label">DRAG TO ROTATE <span>↗</span></div><canvas id="productCanvas" aria-label="Interactive 3D lipstick model"></canvas><div class="three-bottom"><span>VELOURA OBJECTS™</span><span>DESIGNED TO BE SEEN</span></div><div class="three-fallback" id="threeFallback">Your browser may not support WebGL. Enjoy the beauty edit below.</div></div>
+    </section>
+
+    <section class="values">
+      <div><span class="value-icon">✳</span><h3>Made for your mood</h3><p>Beauty has no single setting.</p></div><div><span class="value-icon">◌</span><h3>Feel-good formulas</h3><p>Thoughtful textures, effortless wear.</p></div><div><span class="value-icon">♡</span><h3>Always your rules</h3><p>Wear what makes you feel like you.</p></div>
+    </section>
+
+    <section class="story section" id="story"><div class="story-image"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=90" alt="Beauty editorial portrait"></div><div class="story-copy"><p class="eyebrow dark-eyebrow">A NOTE FROM VELOURA</p><h2>Not here to fit in.<br><em>Here to feel it.</em></h2><p>We believe beauty is a feeling before it's a finish. A swipe of colour, a slow morning ritual, a little extra shine before you step out. Veloura is your invitation to play, experiment, and make the rules your own.</p><a class="text-link dark-link" href="#newsletter">A little more about us ↗</a><div class="story-signature">Beauty, on your terms. <span>V.</span></div></div></section>
+
+    <section class="newsletter" id="newsletter"><div><p class="eyebrow">LET'S MAKE THIS A THING</p><h2>Your inbox called.<br>It wants <em>more glow.</em></h2></div><form id="newsletterForm"><label for="email">GET FIRST DIBS ON NEW DROPS + LITTLE TREATS.</label><div class="email-field"><input id="email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe">↗</button></div><p class="form-message" id="formMessage">By signing up, you agree to receive our occasional notes. No noise, just good things.</p></form></section>
+  </main>
+  <footer class="footer"><div class="footer-top"><a class="wordmark" href="#"><span class="brand-symbol">V</span> VELOURA<span class="wordmark-dot">.</span></a><p>Beauty, without the rules.</p><div class="socials"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="Pinterest">p</a><a href="#" aria-label="TikTok">tk</a></div></div><div class="footer-links"><div><b>THE GOOD STUFF</b><a href="#shop">Shop all</a><a href="#bestsellers">Bestsellers</a><a href="#world">3D studio</a><a href="#story">Our story</a></div><div><b>HERE TO HELP</b><a href="#newsletter">Contact us</a><a href="#newsletter">Shipping & returns</a><a href="#newsletter">FAQs</a><a href="#newsletter">Track your order</a></div><div class="footer-note"><span>BE BOLD.</span><span>BE SOFT.</span><span>BE <em>YOU.</em></span><small>© 2026 VELOURA BEAUTY. MADE WITH FEELING.</small></div></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
